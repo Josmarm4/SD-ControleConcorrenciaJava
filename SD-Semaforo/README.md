@@ -34,3 +34,16 @@ public class SynchronizedLinkedList {
 * Executar os dois programas gerando uma log, se executado mais de uma vez não pode sobrescrever;
 * Realize o Commit de todos os arquivos para o seu  reportório SD-ControleConcorrenciaJava  juntamente com os prints de todas as execuções;
 * Realizar as analises de comparação do código do programa Carro.java e CarroLock.java e incluir o texto da análise no README.md do seu repositório D-ControleConcorrenciaJava. 
+
+# Comparação entre Carro.java e CarroLock.java
+
+### Sincronização
+- `Carro.java`: Utiliza a abordagem de sincronização (ou nenhuma).
+- `CarroLock.java`: Emprega `ReentrantLock`, que oferece maior controle sobre a thread e evita condições de corrida.
+
+### Concorrência
+- `Carro.java`: Threads podem enfrentar problemas de compartilhamento de recurso.
+- `CarroLock.java`: Apresenta melhor gerenciamento de concorrência.
+
+### Conclusão
+O uso de locks (`CarroLock.java`) é mais seguro e eficiente para gerenciar situações de concorrência, especialmente em sistemas que exigem maior controle e prevenção de deadlocks.
